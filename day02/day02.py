@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-from collections import defaultdict
-
 f = open("input.txt")
 
 button = 5
