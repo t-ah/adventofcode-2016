@@ -14,7 +14,7 @@ with open("input.txt", "r") as f:
         for item in splits:
             if tls == "IMP": break
             for abba in re.findall(p, item):
-                if abba[0] == abba[1]: continue
+                if abba[0] == abba[1]: continue # this could be done in the regex, see part 2
                 if item[0] == "[":
                     tls = "IMP"
                     break
