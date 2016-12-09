@@ -20,6 +20,7 @@ def printLCD(display):
             else:
                 row += "-"
         print row
+    print "\n"
 
 def countPixels(display):
     count = 0
