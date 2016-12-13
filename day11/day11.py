@@ -10,7 +10,7 @@
 import re, copy
 from itertools import product
 
-partTwo = False
+partTwo = True
 
 patGen = re.compile(r" (\S+) generator")
 patChip = re.compile(r" (\S+)-compatible")
@@ -134,6 +134,5 @@ while not found:
             found = True
             break
     nodes = newNodes
-    if step == 100: break # this is hopefully big enough
 
-print "Part One/Two:", step, "steps"
+print "Part " + ("Two" if partTwo else "One" + ":"), step, "steps"
