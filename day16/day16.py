@@ -26,3 +26,6 @@ while len(out) % 2 == 0:
     out = checksum(out, len(out))
 
 print "Part", "Two:" if partTwo else "One:", "".join(out)
+
+# there is definitely some pattern to be found ..
+# w 0 w(IR) 0 w 1 w(IR) ,0, w 0 w(IR) 1 w 1 w(IR) ,0, w 0 w' 0 w ...
