@@ -65,7 +65,7 @@ with open("input.txt", "r") as f:
 
 print "Part 1:", "".join(scramble(word, instructions))
 
-# that is not so many possibilities, check all of them ... rotateBased also does not seem to be reversible
+# that is not so many possibilities, check all of them ... the process could be reversed but... well..
 inputPartTwo = "fbgdceah"
 for p in permutations(word):
     if "".join(scramble(list(p), instructions)) == inputPartTwo:
